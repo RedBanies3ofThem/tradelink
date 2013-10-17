@@ -11,7 +11,7 @@ using TradeLink.AppKit;
 
 namespace Chartographer
 {
-    public partial class ChartMain : AppTracker
+    public partial class ChartMain : System.Windows.Forms.Form
     {
         
         

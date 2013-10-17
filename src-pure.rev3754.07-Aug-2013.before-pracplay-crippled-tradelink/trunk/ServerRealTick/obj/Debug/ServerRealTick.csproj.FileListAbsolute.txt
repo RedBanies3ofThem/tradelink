@@ -1,0 +1,4 @@
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerRealTick\obj\Debug\ServerRealTick.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerRealTick\obj\Debug\RealTickConnector.Properties.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerRealTick\obj\Debug\RealTickConnector.RealTickMain.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerRealTick\obj\Debug\ServerRealTick.csproj.GenerateResource.Cache

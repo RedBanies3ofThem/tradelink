@@ -52,7 +52,9 @@ namespace ASP
             // 
             // _availresponses
             // 
+            this._availresponses.BackColor = System.Drawing.Color.Black;
             this._availresponses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._availresponses.ForeColor = System.Drawing.Color.Aqua;
             this._availresponses.FormattingEnabled = true;
             this._availresponses.Location = new System.Drawing.Point(72, 19);
             this._availresponses.Name = "_availresponses";
@@ -63,19 +65,23 @@ namespace ASP
             // 
             // _resnames
             // 
+            this._resnames.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this._resnames.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._resnames.ForeColor = System.Drawing.Color.Yellow;
             this._resnames.FormattingEnabled = true;
             this._resnames.HorizontalScrollbar = true;
+            this._resnames.ItemHeight = 18;
             this._resnames.Location = new System.Drawing.Point(9, 95);
             this._resnames.Name = "_resnames";
             this._resnames.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this._resnames.Size = new System.Drawing.Size(366, 108);
+            this._resnames.Size = new System.Drawing.Size(366, 94);
             this._resnames.TabIndex = 4;
             this._resnames.TabStop = false;
             this.toolTip1.SetToolTip(this._resnames, "Active Responses");
             // 
             // statusStrip1
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.White;
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
@@ -97,6 +103,7 @@ namespace ASP
             // 
             // _newrespbox
             // 
+            this._newrespbox.BackColor = System.Drawing.Color.Black;
             this._newrespbox.Controls.Add(this.label2);
             this._newrespbox.Controls.Add(this._skins);
             this._newrespbox.Controls.Add(this._librarysel);
@@ -104,6 +111,7 @@ namespace ASP
             this._newrespbox.Controls.Add(this._saveskins);
             this._newrespbox.Controls.Add(this._remskin);
             this._newrespbox.Controls.Add(this._availresponses);
+            this._newrespbox.ForeColor = System.Drawing.Color.MediumOrchid;
             this._newrespbox.Location = new System.Drawing.Point(9, 8);
             this._newrespbox.Margin = new System.Windows.Forms.Padding(2);
             this._newrespbox.Name = "_newrespbox";
@@ -116,16 +124,19 @@ namespace ASP
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 21);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 24;
             this.label2.Text = "Response: ";
             // 
             // _skins
             // 
+            this._skins.BackColor = System.Drawing.Color.Black;
             this._skins.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._skins.ForeColor = System.Drawing.Color.Aqua;
             this._skins.FormattingEnabled = true;
             this._skins.Location = new System.Drawing.Point(72, 42);
             this._skins.Margin = new System.Windows.Forms.Padding(2);
@@ -149,10 +160,11 @@ namespace ASP
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(31, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 23;
             this.label1.Text = "Skins: ";
             // 
@@ -217,7 +229,7 @@ namespace ASP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(397, 274);
             this.Controls.Add(this._opttog);
             this.Controls.Add(this._twithelp);
@@ -225,6 +237,7 @@ namespace ASP
             this.Controls.Add(this._newrespbox);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this._resnames);
+            this.ForeColor = System.Drawing.Color.Red;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ASP";
             this.Text = "ASP";

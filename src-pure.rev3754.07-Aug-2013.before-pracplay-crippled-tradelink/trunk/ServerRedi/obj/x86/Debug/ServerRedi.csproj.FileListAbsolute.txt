@@ -1,0 +1,4 @@
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerRedi\obj\x86\Debug\ServerRedi.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerRedi\obj\x86\Debug\ServerRedi.Properties.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerRedi\obj\x86\Debug\ServerRedi.RediMain.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerRedi\obj\x86\Debug\ServerRedi.csproj.GenerateResource.Cache

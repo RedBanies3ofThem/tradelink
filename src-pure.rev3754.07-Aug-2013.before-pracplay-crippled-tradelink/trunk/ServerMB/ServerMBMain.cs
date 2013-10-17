@@ -13,7 +13,7 @@ using TradeLink.AppKit;
 
 namespace ServerMB
 {
-    public partial class ServerMBMain : AppTracker
+    public partial class ServerMBMain : System.Windows.Forms.Form
     {
         
         DebugWindow _dw = new DebugWindow();

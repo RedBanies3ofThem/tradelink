@@ -1,0 +1,4 @@
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerGrayBox\obj\Debug\ServerGrayBox.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerGrayBox\obj\Debug\GbTLServer.GBTradeLink.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerGrayBox\obj\Debug\GbTLServer.Properties.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerGrayBox\obj\Debug\ServerGrayBox.csproj.GenerateResource.Cache

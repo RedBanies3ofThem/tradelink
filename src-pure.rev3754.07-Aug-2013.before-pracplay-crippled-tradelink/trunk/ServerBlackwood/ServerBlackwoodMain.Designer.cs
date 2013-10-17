@@ -42,48 +42,56 @@
             // 
             // _togmsg
             // 
-            this._togmsg.Location = new System.Drawing.Point(117, 69);
+            this._togmsg.BackColor = System.Drawing.Color.Black;
+            this._togmsg.ForeColor = System.Drawing.Color.Yellow;
+            this._togmsg.Location = new System.Drawing.Point(72, 69);
             this._togmsg.Margin = new System.Windows.Forms.Padding(2);
             this._togmsg.Name = "_togmsg";
             this._togmsg.Size = new System.Drawing.Size(22, 22);
             this._togmsg.TabIndex = 14;
             this._togmsg.Text = "!";
-            this._togmsg.UseVisualStyleBackColor = true;
+            this._togmsg.UseVisualStyleBackColor = false;
             this._togmsg.Click += new System.EventHandler(this._togmsg_Click);
             // 
             // _login
             // 
-            this._login.Location = new System.Drawing.Point(63, 69);
+            this._login.BackColor = System.Drawing.Color.Black;
+            this._login.ForeColor = System.Drawing.Color.Lime;
+            this._login.Location = new System.Drawing.Point(7, 69);
             this._login.Margin = new System.Windows.Forms.Padding(2);
             this._login.Name = "_login";
             this._login.Size = new System.Drawing.Size(50, 22);
             this._login.TabIndex = 13;
             this._login.Text = "login";
-            this._login.UseVisualStyleBackColor = true;
+            this._login.UseVisualStyleBackColor = false;
             this._login.Click += new System.EventHandler(this._login_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(24, 48);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Pass:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "User:";
             // 
             // _pw
             // 
+            this._pw.BackColor = System.Drawing.Color.Black;
+            this._pw.ForeColor = System.Drawing.Color.Red;
             this._pw.Location = new System.Drawing.Point(63, 45);
             this._pw.Margin = new System.Windows.Forms.Padding(2);
             this._pw.Name = "_pw";
@@ -93,8 +101,10 @@
             // 
             // _un
             // 
+            this._un.BackColor = System.Drawing.Color.Black;
             this._un.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this._un.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ServerBlackwood.Properties.Settings.Default, "un", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._un.ForeColor = System.Drawing.Color.Lime;
             this._un.Location = new System.Drawing.Point(63, 24);
             this._un.Margin = new System.Windows.Forms.Padding(2);
             this._un.Name = "_un";
@@ -104,7 +114,9 @@
             // 
             // _ipaddress
             // 
+            this._ipaddress.BackColor = System.Drawing.Color.Black;
             this._ipaddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ServerBlackwood.Properties.Settings.Default, "ipaddress", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this._ipaddress.ForeColor = System.Drawing.Color.MediumPurple;
             this._ipaddress.Location = new System.Drawing.Point(63, 3);
             this._ipaddress.Margin = new System.Windows.Forms.Padding(2);
             this._ipaddress.Name = "_ipaddress";
@@ -115,6 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bauhaus 93", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(9, 6);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -124,13 +137,15 @@
             // 
             // _report
             // 
+            this._report.BackColor = System.Drawing.Color.Aqua;
+            this._report.ForeColor = System.Drawing.Color.Cyan;
             this._report.Image = ((System.Drawing.Image)(resources.GetObject("_report.Image")));
-            this._report.Location = new System.Drawing.Point(143, 69);
+            this._report.Location = new System.Drawing.Point(109, 69);
             this._report.Margin = new System.Windows.Forms.Padding(2);
             this._report.Name = "_report";
             this._report.Size = new System.Drawing.Size(22, 22);
             this._report.TabIndex = 21;
-            this._report.UseVisualStyleBackColor = true;
+            this._report.UseVisualStyleBackColor = false;
             this._report.Click += new System.EventHandler(this._report_Click);
             // 
             // ServerBlackwoodMain
@@ -139,7 +154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(210, 95);
+            this.ClientSize = new System.Drawing.Size(141, 95);
             this.Controls.Add(this._report);
             this.Controls.Add(this.label3);
             this.Controls.Add(this._ipaddress);

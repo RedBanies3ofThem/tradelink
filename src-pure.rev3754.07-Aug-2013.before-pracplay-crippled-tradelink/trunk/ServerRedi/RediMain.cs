@@ -11,7 +11,7 @@ using TradeLink.Common;
 
 namespace ServerRedi
 {
-    public partial class RediMain : AppTracker
+    public partial class RediMain : System.Windows.Forms.Form
     {
         ServerRedi tl;
         DebugWindow _dw = new DebugWindow();

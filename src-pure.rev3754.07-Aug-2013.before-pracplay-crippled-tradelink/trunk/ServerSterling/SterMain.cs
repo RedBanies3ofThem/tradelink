@@ -10,7 +10,7 @@ using TradeLink.AppKit;
 
 namespace SterServer
 {
-    public partial class SterMain : AppTracker
+    public partial class SterMain : System.Windows.Forms.Form
     {
         // basic structures needed for operation
         ServerSterling tl;

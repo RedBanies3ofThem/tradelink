@@ -82,6 +82,7 @@ namespace TradeLink.Common
             // 
             // propertyGrid1
             // 
+            this.propertyGrid1.BackColor = System.Drawing.Color.White;
             this.propertyGrid1.CommandsVisibleIfAvailable = false;
             this.propertyGrid1.LineColor = System.Drawing.SystemColors.ControlLight;
             this.propertyGrid1.Location = new System.Drawing.Point(0, 0);
@@ -91,13 +92,15 @@ namespace TradeLink.Common
             // 
             // applyoptionsbut
             // 
+            this.applyoptionsbut.BackColor = System.Drawing.Color.Black;
             this.applyoptionsbut.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.applyoptionsbut.ForeColor = System.Drawing.Color.Yellow;
             this.applyoptionsbut.Location = new System.Drawing.Point(0, 434);
             this.applyoptionsbut.Name = "applyoptionsbut";
             this.applyoptionsbut.Size = new System.Drawing.Size(467, 30);
             this.applyoptionsbut.TabIndex = 1;
             this.applyoptionsbut.Text = "Accept";
-            this.applyoptionsbut.UseVisualStyleBackColor = true;
+            this.applyoptionsbut.UseVisualStyleBackColor = false;
             this.applyoptionsbut.Click += new System.EventHandler(this.ApplybutClick);
             // 
             // ParamPrompt
@@ -111,10 +114,9 @@ namespace TradeLink.Common
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.ParamPrompt_Load);
+            this.SizeChanged += new System.EventHandler(this.ParamPrompt_SizeChanged);
             this.ResumeLayout(false);
-
-            SizeChanged += new EventHandler(ParamPrompt_SizeChanged);
-            Load += new EventHandler(ParamPrompt_Load);
 
         }
 

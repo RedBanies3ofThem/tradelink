@@ -1,0 +1,4 @@
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerDBFX\obj\Release\ServerDBFX.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerDBFX\obj\Release\ServerDBFX.ServerDBFXMain.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerDBFX\obj\Release\ServerDBFX.Properties.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerDBFX\obj\Release\ServerDBFX.csproj.GenerateResource.Cache

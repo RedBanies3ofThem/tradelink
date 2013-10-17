@@ -1,0 +1,12 @@
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\bin\Release\EarlyClose.csv
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\bin\Release\TradeLinkCommon.dll
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\bin\Release\TradeLinkCommon.pdb
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\bin\Release\TradeLinkAPI.dll
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\bin\Release\TradeLinkAPI.pdb
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\bin\Release\TradeLinkAPI.xml
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\obj\Release\TradeLink.Common.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\obj\Release\TradeLink.Common.ParamPrompt.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\obj\Release\TradeLink.Common.csproj.GenerateResource.Cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\obj\Release\TradeLinkCommon.dll
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\obj\Release\TradeLinkCommon.pdb
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkCommon\bin\Release\TradeLinkCommon.XML

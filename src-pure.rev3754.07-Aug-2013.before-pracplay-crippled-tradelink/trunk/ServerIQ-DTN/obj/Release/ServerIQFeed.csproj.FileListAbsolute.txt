@@ -1,0 +1,4 @@
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerIQ-DTN\obj\Release\ServerIQFeed.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerIQ-DTN\obj\Release\IQFeedBroker.IQFeedFrm.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerIQ-DTN\obj\Release\IQFeedBroker.Properties.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerIQ-DTN\obj\Release\ServerIQFeed.csproj.GenerateResource.Cache

@@ -14,8 +14,8 @@ using TradeLink.AppKit;
 
 namespace TikConverter
 {
-    
-    public partial class TikConvertMain : AppTracker
+
+    public partial class TikConvertMain : System.Windows.Forms.Form
     {
         public const string PROGRAM = "TikConverter";
         BackgroundWorker bw = new BackgroundWorker();

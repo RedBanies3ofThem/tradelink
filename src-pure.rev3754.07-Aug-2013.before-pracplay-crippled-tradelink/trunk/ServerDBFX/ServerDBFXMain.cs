@@ -10,7 +10,7 @@ using TradeLink.Common;
 
 namespace ServerDBFX
 {
-    public partial class ServerDBFXMain : AppTracker
+    public partial class ServerDBFXMain : System.Windows.Forms.Form
     {
         ServerDBFX _dbfx;
         public const string PROGRAM = "ServerDBFX";

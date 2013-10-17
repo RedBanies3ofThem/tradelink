@@ -12,7 +12,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="brokertimeoutsec" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">20</Value>
+      <Value Profile="(Default)">40</Value>
     </Setting>
     <Setting Name="prefquote" Type="TradeLink.API.Providers" Scope="User">
       <Value Profile="(Default)">TradeLink</Value>
@@ -27,10 +27,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="TickBufferSize" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">100000</Value>
+      <Value Profile="(Default)">400000</Value>
     </Setting>
     <Setting Name="TicketTracking" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="TicketsOnClose" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -57,10 +57,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="saveindicators" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="UseMarketTimeStamps" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="OversellProtection" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -75,7 +75,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="SaveTicks" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="ExecuteSubscribes" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>

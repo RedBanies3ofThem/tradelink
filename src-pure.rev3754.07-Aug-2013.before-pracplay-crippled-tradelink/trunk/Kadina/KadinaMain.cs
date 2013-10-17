@@ -12,10 +12,9 @@ using TradeLink.AppKit;
 
 namespace Kadina
 {
-    public partial class kadinamain : AppTracker
+    public partial class kadinamain : System.Windows.Forms.Form
     {
-        
-        
+
         string responsedll = "";
         string resname = "";
         Response myres;
@@ -51,9 +50,9 @@ namespace Kadina
 
         public kadinamain()
         {
-            TrackEnabled = Util.TrackUsage();
+            //TrackEnabled = Util.TrackUsage();
             
-            Program = PROGRAM;
+            //Program = PROGRAM;
             _dps = "N" + _dp;
             SimBroker.UseBidAskFills = Properties.Settings.Default.UseBidAskFills;
             InitializeComponent();

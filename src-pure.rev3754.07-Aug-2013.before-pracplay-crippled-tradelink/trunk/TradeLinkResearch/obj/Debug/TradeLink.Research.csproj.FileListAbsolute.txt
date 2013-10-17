@@ -1,0 +1,13 @@
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\bin\Debug\EarlyClose.csv
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\bin\Debug\TradeLinkResearch.dll
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\bin\Debug\TradeLinkResearch.pdb
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\bin\Debug\TradeLinkAPI.dll
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\bin\Debug\TradeLinkCommon.dll
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\bin\Debug\TradeLinkAPI.pdb
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\bin\Debug\TradeLinkCommon.pdb
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\obj\Debug\TradeLink.Research.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\obj\Debug\TradeLink.Research.FetchBasket.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\obj\Debug\TradeLink.Research.Properties.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\obj\Debug\TradeLink.Research.csproj.GenerateResource.Cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\obj\Debug\TradeLinkResearch.dll
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkResearch\obj\Debug\TradeLinkResearch.pdb

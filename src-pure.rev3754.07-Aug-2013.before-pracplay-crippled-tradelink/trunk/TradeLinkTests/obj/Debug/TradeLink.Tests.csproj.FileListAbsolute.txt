@@ -1,0 +1,3 @@
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkTests\obj\Debug\TestTradeLink.Properties.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkTests\obj\Debug\TradeLink.Tests.csproj.GenerateResource.Cache
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkTests\obj\Debug\TradeLink.Tests.csprojResolveAssemblyReference.cache

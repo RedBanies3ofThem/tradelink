@@ -34,11 +34,12 @@ namespace Record
             // 
             // stockslist
             // 
-            this.stockslist.BackColor = System.Drawing.SystemColors.Window;
+            this.stockslist.BackColor = System.Drawing.Color.Black;
             this.stockslist.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stockslist.ForeColor = System.Drawing.Color.Red;
             this.stockslist.FormattingEnabled = true;
             this.stockslist.Location = new System.Drawing.Point(0, 0);
-            this.stockslist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.stockslist.Margin = new System.Windows.Forms.Padding(2);
             this.stockslist.MultiColumn = true;
             this.stockslist.Name = "stockslist";
             this.stockslist.Size = new System.Drawing.Size(217, 159);
@@ -51,7 +52,7 @@ namespace Record
             this.ClientSize = new System.Drawing.Size(217, 159);
             this.Controls.Add(this.stockslist);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RecordMain";
             this.Text = "Record";
             this.ResumeLayout(false);

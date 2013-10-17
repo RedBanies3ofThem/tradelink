@@ -12,7 +12,7 @@ using TradeLink.Common;
 
 namespace RealTickConnector
 {
-    public partial class RealTickMain : AppTracker
+    public partial class RealTickMain : System.Windows.Forms.Form
     {
 
         

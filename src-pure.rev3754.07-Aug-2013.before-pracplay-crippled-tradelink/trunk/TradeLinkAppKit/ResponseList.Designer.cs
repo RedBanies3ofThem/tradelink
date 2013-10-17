@@ -35,10 +35,14 @@
             // 
             // _list
             // 
+            this._list.BackColor = System.Drawing.Color.Black;
             this._list.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._list.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._list.ForeColor = System.Drawing.Color.Cyan;
             this._list.FormattingEnabled = true;
+            this._list.ItemHeight = 16;
             this._list.Location = new System.Drawing.Point(0, 0);
-            this._list.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this._list.Margin = new System.Windows.Forms.Padding(2);
             this._list.Name = "_list";
             this._list.Size = new System.Drawing.Size(254, 228);
             this._list.TabIndex = 0;
@@ -48,7 +52,7 @@
             // 
             this._choose.Dock = System.Windows.Forms.DockStyle.Bottom;
             this._choose.Location = new System.Drawing.Point(0, 206);
-            this._choose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this._choose.Margin = new System.Windows.Forms.Padding(2);
             this._choose.Name = "_choose";
             this._choose.Size = new System.Drawing.Size(254, 22);
             this._choose.TabIndex = 1;
@@ -67,7 +71,7 @@
             this.Controls.Add(this._list);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ResponseList";
             this.ShowInTaskbar = false;
             this.Text = "Choose response to trade:";

@@ -11,7 +11,7 @@ using TradeLink.AppKit;
 
 namespace Record
 {
-    public partial class RecordMain : AppTracker
+    public partial class RecordMain : System.Windows.Forms.Form
     {
         DebugWindow _dw = new DebugWindow();
         TickArchiver _ta = new TickArchiver();
@@ -24,8 +24,8 @@ namespace Record
         
         public RecordMain()
         {
-            TrackEnabled = Util.TrackUsage();
-            Program = PROGRAM;
+            //TrackEnabled = Util.TrackUsage();
+            //Program = PROGRAM;
             InitializeComponent();
             Text += " " + Util.TLVersion();
             string ipaddr = Properties.Settings.Default.ServerIpAddresses;

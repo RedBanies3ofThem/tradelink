@@ -454,4 +454,3 @@ namespace Kadina
         private System.Windows.Forms.ToolStripDropDownButton _skinsavail;
     }
 }
-

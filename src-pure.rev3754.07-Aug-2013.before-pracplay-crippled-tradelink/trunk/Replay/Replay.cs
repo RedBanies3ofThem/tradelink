@@ -12,7 +12,7 @@ using TradeLink.Common;
 
 namespace Replay
 {
-    public partial class Replay : AppTracker
+    public partial class Replay : System.Windows.Forms.Form
     {
         TLServer tl;
 
@@ -32,8 +32,8 @@ namespace Replay
             else
                 tl = new TLServer_IP(Properties.Settings.Default.TLClientAddress, Properties.Settings.Default.TLClientPort);
             tl.VerboseDebugging = Properties.Settings.Default.VerboseDebugging;
-            TrackEnabled = Util.TrackUsage();
-            Program = PROGRAM;
+            //TrackEnabled = Util.TrackUsage();
+            //Program = PROGRAM;
             InitializeComponent();
             Text += " " + Util.TLVersion();
             tl.newProviderName = Providers.TradeLink;

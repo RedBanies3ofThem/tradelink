@@ -56,7 +56,7 @@ namespace TradeLink.AppKit
                     current = Convert.ToInt32(Util.getfile(path + "\\VERSION.txt",null),System.Globalization.CultureInfo.InvariantCulture);
                 }
                 if (current != 0)
-                    wc.DownloadStringAsync(new Uri(ProgramUrl), new verstate(Program, ProgramUrl, current,pause));
+                    ;// wc.DownloadStringAsync(new Uri(ProgramUrl), new verstate(Program, ProgramUrl, current, pause));
             }
             if (checktradelink)
             {
@@ -65,7 +65,7 @@ namespace TradeLink.AppKit
 
                 int current = Util.ProgramBuild(Util.PROGRAM);
                 if (current!=0)
-                    wc.DownloadStringAsync(new Uri(TLSITEURL), new verstate(Util.PROGRAM,TLSITEURL, current,pause));
+                    ;// wc.DownloadStringAsync(new Uri(TLSITEURL), new verstate(Util.PROGRAM, TLSITEURL, current, pause));
             }
         }
         public const string VERSIONFILE = @"\VERSION.txt";

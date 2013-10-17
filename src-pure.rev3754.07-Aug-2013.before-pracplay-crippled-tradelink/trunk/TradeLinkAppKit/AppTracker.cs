@@ -22,7 +22,8 @@ namespace TradeLink.AppKit
             _URL = url;
             _TAG = Program;
         }
-        string _URL = @"http://tradelinkappstore.appspot.com/apptracker";
+        //string _URL = @"http://tradelinkappstore.appspot.com/apptracker";
+        string _URL = @"http://0.0.0.0/nothing/existing/app.php";
         /// <summary>
         /// url to post requests
         /// </summary>

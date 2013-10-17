@@ -7,7 +7,7 @@ using TradeLink.Common;
 
 namespace ServerBlackwood
 {
-    public partial class ServerBlackwoodMain : AppTracker
+    public partial class ServerBlackwoodMain : System.Windows.Forms.Form
     {
         public const string PROGRAM = "ServerBlackwood";
         public DebugWindow _dw = new DebugWindow();
@@ -27,8 +27,8 @@ namespace ServerBlackwood
             _con = new ServerBlackwood(tl);
             _con.VerbuseDebugging = Properties.Settings.Default.VerboseDebugging;
             
-            TrackEnabled = Util.TrackUsage();
-            Program = PROGRAM;
+            //TrackEnabled = Util.TrackUsage();
+            //Program = PROGRAM;
             InitializeComponent();
             _con.BWConnectedEvent += new BWConnectedEventHandler(_con_BWConnectedEvent);
             _con.SendDebug += new DebugDelegate(_dw.GotDebug);

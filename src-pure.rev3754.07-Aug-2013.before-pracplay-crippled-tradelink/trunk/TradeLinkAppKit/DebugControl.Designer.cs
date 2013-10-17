@@ -33,22 +33,26 @@
             // 
             // _msg
             // 
+            this._msg.BackColor = System.Drawing.Color.Black;
             this._msg.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._msg.ForeColor = System.Drawing.Color.Orange;
             this._msg.FormattingEnabled = true;
             this._msg.HorizontalScrollbar = true;
-            this._msg.ItemHeight = 20;
             this._msg.Location = new System.Drawing.Point(0, 0);
+            this._msg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this._msg.Name = "_msg";
             this._msg.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this._msg.Size = new System.Drawing.Size(150, 144);
+            this._msg.Size = new System.Drawing.Size(100, 97);
             this._msg.TabIndex = 0;
             // 
             // DebugControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this._msg);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "DebugControl";
+            this.Size = new System.Drawing.Size(100, 97);
             this.ResumeLayout(false);
 
         }

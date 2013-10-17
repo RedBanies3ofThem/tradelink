@@ -14,7 +14,7 @@ using IESignal;
 
 namespace ServerEsignal
 {
-    public partial class EsignalMain : AppTracker
+    public partial class EsignalMain : System.Windows.Forms.Form
     {
 
         EsignalServer tl;

@@ -11,7 +11,7 @@ using TradeLink.AppKit;
 
 namespace TimeSales
 {
-    public partial class TnS : AppTracker
+    public partial class TnS : System.Windows.Forms.Form
     {
         public const string PROGRAM = "TimeSales";
         Log log = new Log(PROGRAM);

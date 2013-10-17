@@ -16,7 +16,7 @@ using TradeLink.AppKit;
 
 namespace GbTLServer
 {
-    public partial class GBTradeLink : AppTracker
+    public partial class GBTradeLink : System.Windows.Forms.Form
     {
         GrayBox GB;
         public const string PROGRAM = "ServerGraybox";

@@ -22,7 +22,7 @@ using AMTD_API;
 
 namespace TDServer
 {
-    public partial class TDServerMain : AppTracker
+    public partial class TDServerMain : System.Windows.Forms.Form
     {
 
         AmeritradeBrokerAPI api = new AmeritradeBrokerAPI();

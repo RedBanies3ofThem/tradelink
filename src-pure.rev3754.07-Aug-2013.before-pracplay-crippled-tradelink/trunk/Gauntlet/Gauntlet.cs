@@ -10,7 +10,7 @@ using TradeLink.AppKit;
 
 namespace WinGauntlet
 {
-    public partial class Gauntlet : AppTracker
+    public partial class Gauntlet : System.Windows.Forms.Form
     {
 
 

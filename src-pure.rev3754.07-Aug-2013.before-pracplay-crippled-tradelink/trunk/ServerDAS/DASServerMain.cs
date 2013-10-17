@@ -13,7 +13,7 @@ using daslibrary;
 
 namespace ServerDAS
 {
-    public partial class DASServerMain : AppTracker
+    public partial class DASServerMain : System.Windows.Forms.Form
     {
         
          //private bool LOGGEDIN;
