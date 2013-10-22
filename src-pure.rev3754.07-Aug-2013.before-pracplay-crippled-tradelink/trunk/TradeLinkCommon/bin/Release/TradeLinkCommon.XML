@@ -4386,8 +4386,8 @@
             <summary>
             get a barlist from tick data
             </summary>
-            <param name="filename"></param>
-            <returns></returns>
+            <param name="filename">filename</param>
+            <returns>BarList</returns>
         </member>
         <member name="M:TradeLink.Common.BarListImpl.FromTIK(System.String,System.Boolean,System.Boolean)">
             <summary>

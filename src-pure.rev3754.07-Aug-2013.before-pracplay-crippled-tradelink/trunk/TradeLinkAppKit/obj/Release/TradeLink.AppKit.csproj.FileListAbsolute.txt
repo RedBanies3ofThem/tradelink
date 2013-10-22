@@ -38,4 +38,3 @@ C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkAppKit\obj\Release\TradeLink.AppKit.csproj.GenerateResource.Cache
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkAppKit\obj\Release\TradeLinkAppKit.dll
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkAppKit\obj\Release\TradeLinkAppKit.pdb
-C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\TradeLinkAppKit\bin\Release\TradeLinkAppKit.XML

@@ -83,19 +83,26 @@ namespace TradeLink.Common
             // propertyGrid1
             // 
             this.propertyGrid1.BackColor = System.Drawing.Color.White;
+            this.propertyGrid1.CategoryForeColor = System.Drawing.Color.Black;
+            this.propertyGrid1.CommandsBackColor = System.Drawing.Color.DarkGray;
+            this.propertyGrid1.CommandsForeColor = System.Drawing.Color.PaleGreen;
             this.propertyGrid1.CommandsVisibleIfAvailable = false;
+            this.propertyGrid1.HelpBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.propertyGrid1.HelpForeColor = System.Drawing.Color.Red;
             this.propertyGrid1.LineColor = System.Drawing.SystemColors.ControlLight;
             this.propertyGrid1.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.Size = new System.Drawing.Size(467, 464);
+            this.propertyGrid1.Size = new System.Drawing.Size(467, 376);
             this.propertyGrid1.TabIndex = 0;
+            this.propertyGrid1.ViewBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.propertyGrid1.ViewForeColor = System.Drawing.SystemColors.ControlText;
             // 
             // applyoptionsbut
             // 
             this.applyoptionsbut.BackColor = System.Drawing.Color.Black;
             this.applyoptionsbut.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.applyoptionsbut.ForeColor = System.Drawing.Color.Yellow;
-            this.applyoptionsbut.Location = new System.Drawing.Point(0, 434);
+            this.applyoptionsbut.Location = new System.Drawing.Point(0, 346);
             this.applyoptionsbut.Name = "applyoptionsbut";
             this.applyoptionsbut.Size = new System.Drawing.Size(467, 30);
             this.applyoptionsbut.TabIndex = 1;
@@ -105,7 +112,7 @@ namespace TradeLink.Common
             // 
             // ParamPrompt
             // 
-            this.ClientSize = new System.Drawing.Size(467, 464);
+            this.ClientSize = new System.Drawing.Size(467, 376);
             this.Controls.Add(this.applyoptionsbut);
             this.Controls.Add(this.propertyGrid1);
             this.MaximizeBox = false;

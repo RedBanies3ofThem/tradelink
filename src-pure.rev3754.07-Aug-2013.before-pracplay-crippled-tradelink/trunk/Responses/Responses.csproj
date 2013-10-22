@@ -94,12 +94,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BarRequestor.cs" />
+    <Compile Include="BigTradeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BigTradeUI.Designer.cs">
+      <DependentUpon>BigTradeUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="BrokerFeatureList.cs" />
+    <Compile Include="GreyExit.cs" />
+    <Compile Include="LessonBoxHello.cs" />
+    <Compile Include="LessonGenericTrackers.cs" />
+    <Compile Include="LessonIndicators.cs" />
+    <Compile Include="LessonParamPrompt.cs" />
+    <Compile Include="LessonTalib.cs" />
+    <Compile Include="LessonTrackerOverview.cs" />
+    <Compile Include="LessonTrackerRules.cs" />
+    <Compile Include="LessonTradingRules.cs" />
+    <Compile Include="LimitCancel.cs" />
     <Compile Include="MOCOrder_ResponseTest.cs" />
     <Compile Include="MOC_CloseTest.cs" />
     <Compile Include="AlwaysEnter.cs" />
     <Compile Include="AlwaysEnterSingle.cs" />
     <Compile Include="EmptyResponseTemplate.cs" />
+    <Compile Include="OpenAsymetry.cs" />
+    <Compile Include="OpenCancel.cs" />
+    <Compile Include="PairsTracker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quotelet.cs">
       <SubType>Form</SubType>
@@ -107,6 +126,8 @@
     <Compile Include="Quotelet.Designer.cs">
       <DependentUpon>Quotelet.cs</DependentUpon>
     </Compile>
+    <Compile Include="SMAResponse.cs" />
+    <Compile Include="TIF_Response.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Quotelet.resx">

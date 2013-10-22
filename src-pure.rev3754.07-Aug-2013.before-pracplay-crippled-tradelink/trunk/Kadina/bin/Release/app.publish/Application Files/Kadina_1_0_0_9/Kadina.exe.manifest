@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Kadina.exe" version="1.0.0.9" publicKeyToken="e018de4f2628754b" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="KadEye.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Kadina" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Kadina.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ionic.Zip.dll" size="502784">
+      <assemblyIdentity name="Ionic.Zip" version="1.8.4.28" publicKeyToken="EDBE51AD942A3F5C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>uoczgCTIb4oSD4qM0+LJ9m1z5kM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Kadina.exe" size="49664">
+      <assemblyIdentity name="Kadina" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>s2L5wbcuhxsGoK/QOZ/cyXCIE9U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LibCurlNet.dll" size="49152">
+      <assemblyIdentity name="LibCurlNet" version="1.3.0.0" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>y4WhIlpmNEOFlfEc+GDNKyEnMU8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TA-Lib-Core.dll" size="483328">
+      <assemblyIdentity name="TA-Lib-Core" version="1.0.2813.38892" publicKeyToken="FDB2A6B268F56AA5" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>L+NRoO6YJtbD5CgeIvBpHiUXoMM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TradeLinkAPI.dll" size="47616">
+      <assemblyIdentity name="TradeLinkAPI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>wVDjuwMiTjEr0HChju1GY2+MbZI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TradeLinkAppKit.dll" size="368128">
+      <assemblyIdentity name="TradeLinkAppKit" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>RFFfHGEUnKnizqislm2xQVyU6+M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TradeLinkCommon.dll" size="400384">
+      <assemblyIdentity name="TradeLinkCommon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KELlRi/lEzoUTBxLktgMzGjmH64=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="KadEye.ico" size="1078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>wkUDFEQ/12WoL7D3CFct4jJTcu0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Kadina.exe.config" size="1989">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XYcjW6x0sE9AQKlLXe7b8WXGoIM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Sadighian\Jonathan" issuerKeyHash="4db685167ab469ef0e5279a0a0970d6103ed89e7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>zdyJepAv6ZmIPinXgo7UFhrAveg=</DigestValue></Reference></SignedInfo><SignatureValue>DczoOOa7J5yQvm3/ewm6xCV8vzWIFUxirh6J3Q7aAutEMKPld2+/CPS+kncy5ByTCpEA6CqKhEUD81M7UnxOw/4JawMw0XDG0WCCBoyULpBwoFnxO7vAEtsK5fIWgZsoQJlBWgiEkBDS10D0Y89RErWBE9m73x6yCTqL3hjLzHc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6Hk37LcK4jfIanOUSvKFfGaZpNWdfMFE2GbrW+Pb8Nao9XR4GdYf00KoxMO5erHUj7l0yxKss50bUfb/LdE3sISSy9VgchXYEtufDq+qrRodosTNIlbhha4OUM+aMlyIqSvf1WezVQzR4O6zXU0mTUgk8a+WL5+y5SNCd+suX3s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e8bdc01a16d48e82d7293e8899e92f907a89dccd" Description="" Url=""><as:assemblyIdentity name="Kadina.exe" version="1.0.0.9" publicKeyToken="e018de4f2628754b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Sadighian\Jonathan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Mo9eVCBayda58o3kk/ah183oAvs=</DigestValue></Reference></SignedInfo><SignatureValue>hg2DWagjkLfhgG1EGQnLdyilA5d+stSE6MzEq1ENttVvotjB5EEYRkCGyooZs4Mxhny6Ydf/NREMDRK8qJ3dc9o/iA2Qd8bUe7WUh1KlGV5XrVr7d+sFMbiwKRnUbRUg/n5qSV8yenZSX1oK+yM9ndk611PdMEdMWonyRvRU1yE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6Hk37LcK4jfIanOUSvKFfGaZpNWdfMFE2GbrW+Pb8Nao9XR4GdYf00KoxMO5erHUj7l0yxKss50bUfb/LdE3sISSy9VgchXYEtufDq+qrRodosTNIlbhha4OUM+aMlyIqSvf1WezVQzR4O6zXU0mTUgk8a+WL5+y5SNCd+suX3s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQXxERPIehLpBA/AUFGWmDhjANBgkqhkiG9w0BAQUFADAvMS0wKwYDVQQDHiQAUwBhAGQAaQBnAGgAaQBhAG4AXABKAG8AbgBhAHQAaABhAG4wHhcNMTMxMDE1MTg0NTUyWhcNMTQxMDE2MDA0NTUyWjAvMS0wKwYDVQQDHiQAUwBhAGQAaQBnAGgAaQBhAG4AXABKAG8AbgBhAHQAaABhAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOh5N+y3CuI3yGpzlEryhXxmmaTVnXzBRNhm61vj2/DWqPV0eBnWH9NCqMTDuXqx1I+5dMsSrLOdG1H2/y3RN7CEksvVYHIV2BLbnw6vqq0aHaLEzSJW4YWuDlDPmjJciKkr39Vns1UM0eDus11NJk1IJPGvli+fsuUjQnfrLl97AgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAaPkVQhlW+pSBEGn/a9Zq9R/A+UjNJ3/Cez71JK/1+bQmKu7JC72ixj6pw08Cg7xiUDvgYKPuJ55x4nE2vhjsUIZYs8DwJfD62GdrijPBaBhxUioKlpFRn8RIIzNCNBXtGNwUDfE279uOtXT7c/5o3HDs6dQM08MurvHVEbtuNsA=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

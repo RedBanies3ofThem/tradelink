@@ -7,7 +7,6 @@ using TradeLink.Common;
 
 namespace ServerBlackwood
 {
-
     public delegate void BWConnectedEventHandler(object sender, bool BWConnected);
     public delegate void TLSendDelegate(string message, MessageTypes type, string client);
 
@@ -337,6 +336,14 @@ namespace ServerBlackwood
         }
 
 
+        int date = TradeLink.Common.Util.ToTLDate(); int time = 0;
+        void m_Session_OnTimeMessage(object sender, CBWMsgTime timeMsg)
+        {
+            date = TradeLink.Common.Util.ToTLDate(timeMsg.Time.Value);
+            time = TradeLink.Common.Util.ToTLTime(timeMsg.Time.Value);
+        }
+
+
         void stk_OnLevel1Update(object sender, CBWMsgLevel1 quote)
         {
             Tick k = new TickImpl(quote.Symbol.Value);
@@ -348,14 +355,6 @@ namespace ServerBlackwood
             k.date = date;
             k.time = TradeLink.Common.Util.ToTLTime();
             tl.newTick(k);
-        }
-
-
-        int date = TradeLink.Common.Util.ToTLDate(); int time = 0;
-        void m_Session_OnTimeMessage(object sender, CBWMsgTime timeMsg)
-        {
-            date = TradeLink.Common.Util.ToTLDate(timeMsg.Time.Value);
-            time = TradeLink.Common.Util.ToTLTime(timeMsg.Time.Value);
         }
 
 
@@ -537,7 +536,7 @@ namespace ServerBlackwood
                     {
                         int tlDate = TradeLink.Common.Util.ToTLDate(bar.Time);
                         int tlTime = TradeLink.Common.Util.ToTLTime(bar.Time);
-                        Bar tlBar = new BarImpl((decimal)bar.Open, (decimal)bar.High, (decimal)bar.Low, (decimal)bar.Close, (int)bar.Volume, tlDate, tlTime, sym, Convert.ToInt32(histMsg.Interval));
+                        Bar tlBar = new BarImpl((decimal)bar.Open, (decimal)bar.High, (decimal)bar.Low, (decimal)bar.Close, (long)bar.Volume, tlDate, tlTime, sym, Convert.ToInt32(histMsg.Interval));
                         for (int i = 0; i < tl.NumClients; i++)
                             tl.TLSend(BarImpl.Serialize(tlBar), MessageTypes.BARRESPONSE, i.ToString());
                     }
@@ -700,25 +699,37 @@ namespace ServerBlackwood
                 if (!_longint.ContainsKey(_tlid))
                 {
                     //v(String.Format("Mapping TL:[{0}] to BW:[{1}]", _tlid, _bwid));
-                    _longint.Add(_tlid, _bwid);
+                    lock (_longint)
+                    {
+                        _longint.Add(_tlid, _bwid);
+                    }
                 }
                 else
                 {
                     // update the existing ID
                     v(String.Format("-----WARNING! Updating TL:[{0}] with BW:[{1}]", _tlid, _bwid));
-                    _longint[_tlid] = _bwid;
+                    lock (_longint)
+                    {
+                        _longint[_tlid] = _bwid;
+                    }
                 }
                 // broker 2 TL
                 if (!_intlong.ContainsKey(_bwid))
                 {
                     //v(String.Format("Mapping BW:[{0}] to TL:[{1}]", _bwid, _tlid));
-                    _intlong.Add(_bwid, _tlid);
+                    lock (_intlong)
+                    {
+                        _intlong.Add(_bwid, _tlid);
+                    }
                 }
                 else
                 {
                     // update the existing ID
                     v(String.Format("-----WARNING! Updating BW:[{0}] with TL:[{1}]", _bwid, _tlid));
-                    _intlong[_bwid] = _tlid; // this actually shouldn't be called...!
+                    lock (_intlong)
+                    {
+                        _intlong[_bwid] = _tlid; // this actually shouldn't be called...!
+                    }
                 }
             }
             else
@@ -738,13 +749,18 @@ namespace ServerBlackwood
             if (_intlong.ContainsKey(_bwid))
             {
                 _intlong.TryGetValue(_bwid, out _tlid);
-
                 if (_tlid != 0)
                 {
                     // update TL with BWid
-                    _intlong.Remove(_bwid);
-                    _intlong.Add(_smartID, _tlid);
-                    _longint[_tlid] = _smartID;
+                    lock (_intlong)
+                    {
+                        _intlong.Remove(_bwid);
+                        _intlong.Add(_smartID, _tlid);
+                    }
+                    lock (_longint)
+                    {
+                        _longint[_tlid] = _smartID;
+                    }
                     //v(String.Format("RECTIFYING! Updating order map, TL:[{0}] with BW:[{1}]", _tlid, _smartID));
                 }
                 else
@@ -761,10 +777,18 @@ namespace ServerBlackwood
                 else
                 {
                     long _cancelID = _id.AssignId;
-                    _intlong.Add(_smartID, _cancelID);
-                    _longint.Add(_cancelID, _smartID);
+                    lock (_intlong)
+                    {
+                        _intlong.Add(_smartID, _cancelID);
+                    }
+                    lock (_longint)
+                    {
+                        _longint.Add(_cancelID, _smartID);
+                    }
                     //orderz.Add(_cancelID, bwo);
-                    debug(String.Format("+++Manual Order ack+++ SmartID:[{0}] getting tagged to *NEW* TL_ID: [{1}] and BWOrder: [{2}]", _smartID, _cancelID, bwo.ToString()));
+                    debug(String.Format("{0} ***manual order ack***", bwo.Symbol));
+                    //v(String.Format("+++Manual Order ack+++ SmartID:[{0}] getting tagged to *NEW* TL_ID: [{1}] and BWOrder: [{2}]", 
+                    //    _smartID, _cancelID, bwo.ToString()));
                 }
             }
         }
@@ -778,7 +802,10 @@ namespace ServerBlackwood
             if (_intlong.ContainsKey(_bwid))
             {
                 // locate TL order via bwo.SmartID
-                _intlong.TryGetValue(_bwid, out _tlid);
+                lock (_intlong)
+                {
+                    _intlong.TryGetValue(_bwid, out _tlid);
+                }
             }
             else
             {
@@ -810,7 +837,10 @@ namespace ServerBlackwood
             // update orderz map
             if (!orderz.ContainsKey(o.id))
             {
-                orderz.Add(o.id, bwo);
+                lock (orderz)
+                {
+                    orderz.Add(o.id, bwo);
+                }
                 //v(String.Format("STATUS.MARKET ...adding to orderz: TL_ID: [{0}] with bwo: [{1}]", o.id, bwo.ToString()));
             }
             else
@@ -824,7 +854,10 @@ namespace ServerBlackwood
         {
             if (!_cancelMsgID.ContainsKey(cancelMsg.CancelID))
             {
-                _cancelMsgID.Add(cancelMsg.CancelID.Value, cancelMsg.SmartID.Value);
+                lock (_cancelMsgID)
+                {
+                    _cancelMsgID.Add(cancelMsg.CancelID.Value, cancelMsg.SmartID.Value);
+                }
                 double _price = Math.Round(cancelMsg.Price, 2);
 
                 v(String.Format("ServerID: {0}, CancelID: {1}, CancelTime: {2}, CIOrdID: {3}, FeedID: {4}, OrderSize: {5}, OrderType: {6}, Price: {7}, OrderTime: {8}",
@@ -839,7 +872,10 @@ namespace ServerBlackwood
                     {
                         if (!tl_canceledids.ContainsKey(_tlid))
                         {
-                            tl_canceledids.Add(_tlid, false);
+                            lock (tl_canceledids)
+                            {
+                                tl_canceledids.Add(_tlid, false);
+                            }
 
                             //validate TL
                             bool _isTLsent = false;
@@ -853,10 +889,18 @@ namespace ServerBlackwood
                                 {
                                     v(String.Format("CANCELUPDATE. TL ++ADDING++ to TL_CANCELIDs BW KEY:[{0}]", _smartID));
                                     tl.newCancel(_tlid);
-                                    tl_canceledids[_tlid] = true;
+                                    lock (tl_canceledids)
+                                    {
+                                        tl_canceledids[_tlid] = true;
+                                    }
                                     debug(String.Format("...found TL[{0}] and canceled BW[{1}]", _tlid, _smartID));
                                     if (!bw_cancelids.ContainsKey(_smartID))
-                                        bw_cancelids.Add(_smartID, false);
+                                    {
+                                        lock (bw_cancelids)
+                                        {
+                                            bw_cancelids.Add(_smartID, false);
+                                        }
+                                    }
                                 }
                             }
                             else
@@ -878,10 +922,18 @@ namespace ServerBlackwood
                                 {
                                     v(String.Format("CANCELUPDATE. TL ++ADDING++ to TL_CANCELIDs BW KEY:[{0}]", _smartID));
                                     tl.newCancel(_tlid);
-                                    tl_canceledids[_tlid] = true;
+                                    lock (tl_canceledids)
+                                    {
+                                        tl_canceledids[_tlid] = true;
+                                    }
                                     debug(String.Format("...found TL[{0}] and canceled BW[{1}]", _tlid, _smartID));
                                     if (!bw_cancelids.ContainsKey(_smartID))
-                                        bw_cancelids.Add(_smartID, false);
+                                    {
+                                        lock (bw_cancelids)
+                                        {
+                                            bw_cancelids.Add(_smartID, false);
+                                        }
+                                    }
                                 }
                             }
                             else
@@ -908,7 +960,10 @@ namespace ServerBlackwood
             long _tlid = 0;
 
             int _bwid = rejectMsg.ClientOrderID;
-            _intlong.TryGetValue(_bwid, out _tlid);
+            lock (_intlong)
+            {
+                _intlong.TryGetValue(_bwid, out _tlid);
+            }
             v(String.Format("REJECT_TYPE.{0}.{1} for TL order [{2}]", rejectMsg.Type, rejectMsg.Symbol.Value, _tlid));
             switch (rejectMsg.RejectType.Value)
             {
@@ -916,7 +971,10 @@ namespace ServerBlackwood
                     {
                         if (!tl_canceledids.ContainsKey(_tlid))
                         {
-                            tl_canceledids.Add(_tlid, false);
+                            lock (tl_canceledids)
+                            {
+                                tl_canceledids.Add(_tlid, false);
+                            }
                             bool _value = false;
                             if (tl_canceledids.TryGetValue(_tlid, out _value))
                             {
@@ -927,7 +985,10 @@ namespace ServerBlackwood
                                 else
                                 {
                                     v(String.Format("REJECT_ORDER. tl_canceledids is ADDING ++ :[{0}]", _tlid));
-                                    tl_canceledids[_tlid] = true;
+                                    lock (tl_canceledids)
+                                    {
+                                        tl_canceledids[_tlid] = true;
+                                    }
                                     tl.newCancel(_tlid);
                                 }
                             }
@@ -948,7 +1009,10 @@ namespace ServerBlackwood
                                 else
                                 {
                                     v(String.Format("REJECT_ORDER. tl_canceledids is ADDING ++ :[{0}]", _tlid));
-                                    tl_canceledids[_tlid] = true;
+                                    lock (tl_canceledids)
+                                    {
+                                        tl_canceledids[_tlid] = true;
+                                    }
                                     tl.newCancel(_tlid);
                                 }
                             }

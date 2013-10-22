@@ -308,7 +308,7 @@ namespace ASP
         {
             TLClient tl = new TLClient_WM(false);
             // check for new versions
-            Versions.UpgradeAlert(tl,true);
+            Versions.UpgradeAlert(tl,true);      
             tl.Disconnect();
         }
 

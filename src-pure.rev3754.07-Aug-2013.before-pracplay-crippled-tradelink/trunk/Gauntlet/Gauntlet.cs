@@ -27,8 +27,8 @@ namespace WinGauntlet
 
         public Gauntlet()
         {
-            TrackEnabled = Util.TrackUsage();
-            Program = PROGRAM;
+            //TrackEnabled = Util.TrackUsage();
+            //Program = PROGRAM;
             InitializeComponent();
             Text += " " + Util.TLVersion();
             debug(Util.TLSIdentity());

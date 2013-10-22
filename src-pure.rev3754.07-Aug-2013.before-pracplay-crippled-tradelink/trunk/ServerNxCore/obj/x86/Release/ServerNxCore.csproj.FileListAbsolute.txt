@@ -20,9 +20,9 @@ C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\bin\x86\Release\TradeLinkAppKit.xml
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\bin\x86\Release\TradeLinkAPI.pdb
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\bin\x86\Release\TradeLinkAPI.xml
-C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\obj\x86\Release\ServerNxCore.csprojResolveAssemblyReference.cache
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\obj\x86\Release\ServerNxCore.ServerNxCoreMain.resources
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\obj\x86\Release\ServerNxCore.Properties.Resources.resources
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\obj\x86\Release\ServerNxCore.csproj.GenerateResource.Cache
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\obj\x86\Release\ServerNxCore32.exe
 C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\obj\x86\Release\ServerNxCore32.pdb
+C:\Users\Jonathan\Documents\GitHub\tradelink\src-pure.rev3754.07-Aug-2013.before-pracplay-crippled-tradelink\trunk\ServerNxCore\obj\x86\Release\ServerNxCore.csprojResolveAssemblyReference.cache

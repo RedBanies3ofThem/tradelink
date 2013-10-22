@@ -23,8 +23,8 @@ namespace TimeSales
 
         public TnS()
         {
-            TrackEnabled = Util.TrackUsage();
-            Program = PROGRAM;
+            //TrackEnabled = Util.TrackUsage();
+            //Program = PROGRAM;
             InitializeComponent();
             Text += " " + Util.TLVersion();
             initgrid();

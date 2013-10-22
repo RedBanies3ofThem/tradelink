@@ -197,11 +197,12 @@ namespace WinGauntlet
             // lastmessage
             // 
             this.lastmessage.Name = "lastmessage";
-            this.lastmessage.Size = new System.Drawing.Size(80, 20);
+            this.lastmessage.Size = new System.Drawing.Size(86, 20);
             this.lastmessage.Text = "No active runs.";
             // 
             // queuebut
             // 
+            this.queuebut.Font = new System.Drawing.Font("Jokerman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.queuebut.Location = new System.Drawing.Point(112, 201);
             this.queuebut.Name = "queuebut";
             this.queuebut.Size = new System.Drawing.Size(205, 32);
@@ -213,7 +214,9 @@ namespace WinGauntlet
             // 
             // reslist
             // 
+            this.reslist.BackColor = System.Drawing.Color.Black;
             this.reslist.ColumnWidth = 300;
+            this.reslist.ForeColor = System.Drawing.Color.Cyan;
             this.reslist.FormattingEnabled = true;
             this.reslist.Location = new System.Drawing.Point(8, 35);
             this.reslist.MultiColumn = true;
@@ -259,7 +262,7 @@ namespace WinGauntlet
             this.optionpage.Location = new System.Drawing.Point(4, 22);
             this.optionpage.Name = "optionpage";
             this.optionpage.Padding = new System.Windows.Forms.Padding(3);
-            this.optionpage.Size = new System.Drawing.Size(534, 342);
+            this.optionpage.Size = new System.Drawing.Size(605, 274);
             this.optionpage.TabIndex = 1;
             this.optionpage.Text = "Options";
             // 
@@ -546,7 +549,7 @@ namespace WinGauntlet
             this.optimizetab.Location = new System.Drawing.Point(4, 22);
             this.optimizetab.Name = "optimizetab";
             this.optimizetab.Padding = new System.Windows.Forms.Padding(3);
-            this.optimizetab.Size = new System.Drawing.Size(534, 342);
+            this.optimizetab.Size = new System.Drawing.Size(605, 274);
             this.optimizetab.TabIndex = 7;
             this.optimizetab.Text = "Optimize";
             // 
@@ -724,7 +727,7 @@ namespace WinGauntlet
             this.equitycurvetab.Controls.Add(this.equitychart);
             this.equitycurvetab.Location = new System.Drawing.Point(4, 22);
             this.equitycurvetab.Name = "equitycurvetab";
-            this.equitycurvetab.Size = new System.Drawing.Size(534, 342);
+            this.equitycurvetab.Size = new System.Drawing.Size(605, 274);
             this.equitycurvetab.TabIndex = 6;
             this.equitycurvetab.Text = "Equity";
             // 
@@ -746,7 +749,7 @@ namespace WinGauntlet
             0,
             -2147483648});
             this.equitychart.Name = "equitychart";
-            this.equitychart.Size = new System.Drawing.Size(534, 342);
+            this.equitychart.Size = new System.Drawing.Size(605, 274);
             this.equitychart.Symbol = "";
             this.equitychart.TabIndex = 0;
             // 
@@ -757,7 +760,7 @@ namespace WinGauntlet
             this._resulttab.Margin = new System.Windows.Forms.Padding(2);
             this._resulttab.Name = "_resulttab";
             this._resulttab.Padding = new System.Windows.Forms.Padding(2);
-            this._resulttab.Size = new System.Drawing.Size(534, 342);
+            this._resulttab.Size = new System.Drawing.Size(605, 274);
             this._resulttab.TabIndex = 5;
             this._resulttab.Text = "Results";
             this._resulttab.UseVisualStyleBackColor = true;
@@ -771,7 +774,7 @@ namespace WinGauntlet
             this.tradeResults1.Margin = new System.Windows.Forms.Padding(1);
             this.tradeResults1.Name = "tradeResults1";
             this.tradeResults1.Path = "C:\\Users\\jfranta\\Documents";
-            this.tradeResults1.Size = new System.Drawing.Size(530, 338);
+            this.tradeResults1.Size = new System.Drawing.Size(601, 270);
             this.tradeResults1.SplitterDistance = 43;
             this.tradeResults1.TabIndex = 0;
             // 
@@ -780,7 +783,7 @@ namespace WinGauntlet
             this.messagepage.Controls.Add(this.messages);
             this.messagepage.Location = new System.Drawing.Point(4, 22);
             this.messagepage.Name = "messagepage";
-            this.messagepage.Size = new System.Drawing.Size(534, 342);
+            this.messagepage.Size = new System.Drawing.Size(605, 274);
             this.messagepage.TabIndex = 4;
             this.messagepage.Text = "Messages";
             this.messagepage.UseVisualStyleBackColor = true;
@@ -793,7 +796,7 @@ namespace WinGauntlet
             this.messages.Location = new System.Drawing.Point(0, 0);
             this.messages.Name = "messages";
             this.messages.ReadOnly = global::WinGauntlet.Properties.Settings.Default.writeonmessages;
-            this.messages.Size = new System.Drawing.Size(534, 342);
+            this.messages.Size = new System.Drawing.Size(605, 274);
             this.messages.TabIndex = 0;
             this.messages.Text = "";
             // 

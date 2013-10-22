@@ -23,8 +23,8 @@ namespace RealTickConnector
         private ServerRealTick tl;
         public RealTickMain()
         {
-            TrackEnabled = Util.TrackUsage();
-            Program = PROGRAM;
+            //TrackEnabled = Util.TrackUsage();
+            //Program = PROGRAM;
             InitializeComponent();
 
             tl = new ServerRealTick();

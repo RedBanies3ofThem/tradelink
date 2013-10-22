@@ -750,8 +750,8 @@ histperiod=daily&startdate=" + startdate + "&enddate=" + enddate + "&output=csv&
         /// <summary>
         /// get a barlist from tick data
         /// </summary>
-        /// <param name="filename"></param>
-        /// <returns></returns>
+        /// <param name="filename">filename</param>
+        /// <returns>BarList</returns>
         public static BarList FromTIK(string filename) { return FromTIK(filename, true, true); }
         /// <summary>
         /// get a barlist from tick data and optionally use bid/ask data to construct bars

@@ -36,7 +36,6 @@ namespace Kadina
             this._skinsavail = new System.Windows.Forms.ToolStripDropDownButton();
             this._tabs = new System.Windows.Forms.TabControl();
             this.msgtab = new System.Windows.Forms.TabPage();
-            this.debugControl1 = new TradeLink.AppKit.DebugControl();
             this.ticktab = new System.Windows.Forms.TabPage();
             this.itab = new System.Windows.Forms.TabPage();
             this.postab = new System.Windows.Forms.TabPage();
@@ -59,6 +58,7 @@ namespace Kadina
             this.fourhour = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this._reset = new System.Windows.Forms.Button();
+            this.debugControl1 = new TradeLink.AppKit.DebugControl();
             this.statusStrip1.SuspendLayout();
             this._tabs.SuspendLayout();
             this.msgtab.SuspendLayout();
@@ -91,7 +91,7 @@ namespace Kadina
             this.recent.Image = ((System.Drawing.Image)(resources.GetObject("recent.Image")));
             this.recent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.recent.Name = "recent";
-            this.recent.Size = new System.Drawing.Size(64, 17);
+            this.recent.Size = new System.Drawing.Size(68, 19);
             this.recent.Text = "Add data";
             this.recent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.recent.ToolTipText = "Add historical tick files to study";
@@ -105,7 +105,7 @@ namespace Kadina
             this.reslist.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.reslist.Name = "reslist";
             this.reslist.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.reslist.Size = new System.Drawing.Size(86, 17);
+            this.reslist.Size = new System.Drawing.Size(92, 19);
             this.reslist.Text = "Add response";
             this.reslist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.reslist.ToolTipText = "Choose response library and a response to study";
@@ -117,7 +117,7 @@ namespace Kadina
             this._skinsavail.Image = ((System.Drawing.Image)(resources.GetObject("_skinsavail.Image")));
             this._skinsavail.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._skinsavail.Name = "_skinsavail";
-            this._skinsavail.Size = new System.Drawing.Size(44, 17);
+            this._skinsavail.Size = new System.Drawing.Size(47, 19);
             this._skinsavail.Text = "Skins";
             this._skinsavail.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this._skinsavail_DropDownItemClicked);
             // 
@@ -146,30 +146,17 @@ namespace Kadina
             this.msgtab.Controls.Add(this.debugControl1);
             this.msgtab.Location = new System.Drawing.Point(4, 22);
             this.msgtab.Name = "msgtab";
-            this.msgtab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.msgtab.Padding = new System.Windows.Forms.Padding(3);
             this.msgtab.Size = new System.Drawing.Size(519, 170);
             this.msgtab.TabIndex = 0;
             this.msgtab.Text = "Messages";
-            // 
-            // debugControl1
-            // 
-            this.debugControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debugControl1.EnableSearching = true;
-            this.debugControl1.ExternalTimeStamp = 0;
-            this.debugControl1.Location = new System.Drawing.Point(3, 3);
-            this.debugControl1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.debugControl1.Name = "debugControl1";
-            this.debugControl1.Size = new System.Drawing.Size(513, 164);
-            this.debugControl1.TabIndex = 0;
-            this.debugControl1.TimeStamps = false;
-            this.debugControl1.UseExternalTimeStamp = false;
             // 
             // ticktab
             // 
             this.ticktab.BackColor = System.Drawing.SystemColors.Window;
             this.ticktab.Location = new System.Drawing.Point(4, 22);
             this.ticktab.Name = "ticktab";
-            this.ticktab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ticktab.Padding = new System.Windows.Forms.Padding(3);
             this.ticktab.Size = new System.Drawing.Size(519, 170);
             this.ticktab.TabIndex = 1;
             this.ticktab.Text = "Ticks";
@@ -217,7 +204,7 @@ namespace Kadina
             // 
             this.charttab.BackColor = System.Drawing.SystemColors.Window;
             this.charttab.Location = new System.Drawing.Point(4, 22);
-            this.charttab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.charttab.Margin = new System.Windows.Forms.Padding(2);
             this.charttab.Name = "charttab";
             this.charttab.Size = new System.Drawing.Size(519, 170);
             this.charttab.TabIndex = 6;
@@ -227,9 +214,9 @@ namespace Kadina
             // 
             this._results.BackColor = System.Drawing.SystemColors.Window;
             this._results.Location = new System.Drawing.Point(4, 22);
-            this._results.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this._results.Margin = new System.Windows.Forms.Padding(2);
             this._results.Name = "_results";
-            this._results.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this._results.Padding = new System.Windows.Forms.Padding(2);
             this._results.Size = new System.Drawing.Size(519, 170);
             this._results.TabIndex = 7;
             this._results.Text = "Results";
@@ -249,13 +236,13 @@ namespace Kadina
             // _stat
             // 
             this._stat.Name = "_stat";
-            this._stat.Size = new System.Drawing.Size(319, 17);
+            this._stat.Size = new System.Drawing.Size(340, 17);
             this._stat.Text = "Kadina lets you see your response to a given set of market data.";
             // 
             // onemin
             // 
             this.onemin.Location = new System.Drawing.Point(333, 8);
-            this.onemin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.onemin.Margin = new System.Windows.Forms.Padding(2);
             this.onemin.Name = "onemin";
             this.onemin.Size = new System.Drawing.Size(40, 22);
             this.onemin.TabIndex = 3;
@@ -266,7 +253,7 @@ namespace Kadina
             // fivemin
             // 
             this.fivemin.Location = new System.Drawing.Point(377, 8);
-            this.fivemin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fivemin.Margin = new System.Windows.Forms.Padding(2);
             this.fivemin.Name = "fivemin";
             this.fivemin.Size = new System.Drawing.Size(37, 22);
             this.fivemin.TabIndex = 4;
@@ -277,7 +264,7 @@ namespace Kadina
             // tenmin
             // 
             this.tenmin.Location = new System.Drawing.Point(419, 8);
-            this.tenmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tenmin.Margin = new System.Windows.Forms.Padding(2);
             this.tenmin.Name = "tenmin";
             this.tenmin.Size = new System.Drawing.Size(41, 22);
             this.tenmin.TabIndex = 5;
@@ -288,7 +275,7 @@ namespace Kadina
             // thirtymin
             // 
             this.thirtymin.Location = new System.Drawing.Point(463, 8);
-            this.thirtymin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.thirtymin.Margin = new System.Windows.Forms.Padding(2);
             this.thirtymin.Name = "thirtymin";
             this.thirtymin.Size = new System.Drawing.Size(41, 22);
             this.thirtymin.TabIndex = 6;
@@ -299,7 +286,7 @@ namespace Kadina
             // onehour
             // 
             this.onehour.Location = new System.Drawing.Point(291, 36);
-            this.onehour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.onehour.Margin = new System.Windows.Forms.Padding(2);
             this.onehour.Name = "onehour";
             this.onehour.Size = new System.Drawing.Size(39, 22);
             this.onehour.TabIndex = 7;
@@ -310,7 +297,7 @@ namespace Kadina
             // ptend
             // 
             this.ptend.Location = new System.Drawing.Point(419, 36);
-            this.ptend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptend.Margin = new System.Windows.Forms.Padding(2);
             this.ptend.Name = "ptend";
             this.ptend.Size = new System.Drawing.Size(41, 22);
             this.ptend.TabIndex = 8;
@@ -321,7 +308,7 @@ namespace Kadina
             // onesec
             // 
             this.onesec.Location = new System.Drawing.Point(290, 8);
-            this.onesec.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.onesec.Margin = new System.Windows.Forms.Padding(2);
             this.onesec.Name = "onesec";
             this.onesec.Size = new System.Drawing.Size(39, 22);
             this.onesec.TabIndex = 9;
@@ -342,7 +329,7 @@ namespace Kadina
             // twohour
             // 
             this.twohour.Location = new System.Drawing.Point(334, 36);
-            this.twohour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.twohour.Margin = new System.Windows.Forms.Padding(2);
             this.twohour.Name = "twohour";
             this.twohour.Size = new System.Drawing.Size(40, 22);
             this.twohour.TabIndex = 11;
@@ -353,7 +340,7 @@ namespace Kadina
             // fourhour
             // 
             this.fourhour.Location = new System.Drawing.Point(378, 36);
-            this.fourhour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fourhour.Margin = new System.Windows.Forms.Padding(2);
             this.fourhour.Name = "fourhour";
             this.fourhour.Size = new System.Drawing.Size(37, 22);
             this.fourhour.TabIndex = 12;
@@ -364,7 +351,7 @@ namespace Kadina
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(463, 36);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(41, 22);
             this.button1.TabIndex = 13;
@@ -375,13 +362,26 @@ namespace Kadina
             // _reset
             // 
             this._reset.Location = new System.Drawing.Point(218, 36);
-            this._reset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this._reset.Margin = new System.Windows.Forms.Padding(2);
             this._reset.Name = "_reset";
             this._reset.Size = new System.Drawing.Size(63, 22);
             this._reset.TabIndex = 14;
             this._reset.Text = "Restart";
             this._reset.UseVisualStyleBackColor = true;
             this._reset.Click += new System.EventHandler(this._reset_Click);
+            // 
+            // debugControl1
+            // 
+            this.debugControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.debugControl1.EnableSearching = true;
+            this.debugControl1.ExternalTimeStamp = 0;
+            this.debugControl1.Location = new System.Drawing.Point(3, 3);
+            this.debugControl1.Margin = new System.Windows.Forms.Padding(1);
+            this.debugControl1.Name = "debugControl1";
+            this.debugControl1.Size = new System.Drawing.Size(513, 164);
+            this.debugControl1.TabIndex = 0;
+            this.debugControl1.TimeStamps = false;
+            this.debugControl1.UseExternalTimeStamp = false;
             // 
             // kadinamain
             // 

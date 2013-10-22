@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>TZnY+bCoBllAzSE25JXYTxCPqDQ=</dsig:DigestValue>
+        <dsig:DigestValue>ExurSZJiQf/++ERskr8rXUJyLMk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>b9XnJqn2xAWP7/GS3tWTPreht7c=</dsig:DigestValue>
+        <dsig:DigestValue>VgBNf8zQAnFvSYL+dxdwhFLDQQw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,19 +98,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>tPSiga1rg8gt7/M4p5FhG6MKJ3Q=</dsig:DigestValue>
+        <dsig:DigestValue>XV23X+jVhUphZRF5vkQ3a7VFS30=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TradeLinkCommon.dll" size="399872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TradeLinkCommon.dll" size="400384">
       <assemblyIdentity name="TradeLinkCommon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>a5bxK99qYc0Zeh5Z+l64S+uGZiY=</dsig:DigestValue>
+        <dsig:DigestValue>pBNN/8Dm7GKTEtZHghNyIs/+1lw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
