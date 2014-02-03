@@ -2465,6 +2465,16 @@
             if disabled runs as a histsimindexplay
             </summary>
         </member>
+        <member name="M:TradeLink.Common.TimeIntervalData.newPoint(System.String,System.Decimal,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            new point
+            </summary>
+            <param name="symbol">symbol</param>
+            <param name="p">price</param>
+            <param name="time">time</param>
+            <param name="date">date</param>
+            <param name="size">trade size</param>
+        </member>
         <member name="F:TradeLink.Common.BarRequest.Client">
             <summary>
             client making request
@@ -4335,7 +4345,7 @@
             </summary>
             <param name="symbol">The symbol.</param>
             <param name="filedata">The file containing the CSV records.</param>
-            <returns></returns>
+            <returns>barlistimple</returns>
         </member>
         <member name="M:TradeLink.Common.BarListImpl.GetNearestIntraBar(TradeLink.API.BarList,System.Int32,TradeLink.API.BarInterval)">
             <summary>
@@ -4452,13 +4462,13 @@
             <summary>
             load previous days bar data from tick files located in tradelink tick folder
             </summary>
-            <param name="PreviousDay"></param>
-            <param name="syms"></param>
-            <param name="AttemptToLoadPreviousDayBars"></param>
-            <param name="_blt"></param>
-            <param name="NewBarEvents"></param>
-            <param name="deb"></param>
-            <returns></returns>
+            <param name="PreviousDay">PreviousDay</param>
+            <param name="syms">symbol</param>
+            <param name="AttemptToLoadPreviousDayBars">AttemptToLoadPreviousDayBars</param>
+            <param name="_blt">blt</param>
+            <param name="NewBarEvents">GotNewBar</param>
+            <param name="deb">debug delegate</param>
+            <returns>true if valid</returns>
         </member>
         <member name="M:TradeLink.Common.BarListImpl.GetUniqueIntervals(TradeLink.API.BarInterval[])">
             <summary>
@@ -7377,6 +7387,13 @@
             helper methods to use with GenericTracker T
             </summary>
         </member>
+        <member name="M:TradeLink.Common.GenericTracker.geninds(TradeLink.API.GenericTrackerI[])">
+            <summary>
+            
+            </summary>
+            <param name="gts">generic tracker</param>
+            <returns></returns>
+        </member>
         <member name="M:TradeLink.Common.GenericTracker.CSVInitGeneric``1(System.String,TradeLink.Common.GenericTracker{``0}@)">
             <summary>
             import a csv file into a generic tracker
@@ -7440,24 +7457,24 @@
             <summary>
             gets all current values of every tracker for every symbol being tracked
             </summary>
-            <param name="gts"></param>
-            <returns></returns>
+            <param name="gts">generic trackers</param>
+            <returns>string format of values</returns>
         </member>
         <member name="M:TradeLink.Common.GenericTracker.GetIndicatorPairs(System.Int32,TradeLink.API.GenericTrackerI[])">
             <summary>
             get single readable line of indicators for output when response debugging
             </summary>
-            <param name="idx"></param>
-            <param name="gts"></param>
+            <param name="idx">index</param>
+            <param name="gts">generic trackers</param>
             <returns></returns>
         </member>
         <member name="M:TradeLink.Common.GenericTracker.GetIndicatorPairs(System.Int32,System.String,TradeLink.API.GenericTrackerI[])">
             <summary>
             get single readable line of indicators (with custom delimiter) for output when response debugging
             </summary>
-            <param name="idx"></param>
+            <param name="idx">index</param>
             <param name="delim"></param>
-            <param name="gts"></param>
+            <param name="gts">generic trackers</param>
             <returns></returns>
         </member>
         <member name="M:TradeLink.Common.GenericTracker.WriteCSV``1(System.String,TradeLink.Common.GenericTracker{``0},System.Int32)">
@@ -7466,7 +7483,7 @@
             </summary>
             <typeparam name="T"></typeparam>
             <param name="filepath"></param>
-            <param name="gt"></param>
+            <param name="gt">generic trackers</param>
             <param name="col"></param>
             <returns></returns>
         </member>
@@ -7476,7 +7493,7 @@
             </summary>
             <typeparam name="T"></typeparam>
             <param name="filepath"></param>
-            <param name="gt"></param>
+            <param name="gt">generic trackers</param>
             <param name="col"></param>
             <param name="symcol"></param>
             <returns></returns>
@@ -7487,7 +7504,7 @@
             </summary>
             <typeparam name="T"></typeparam>
             <param name="filepath"></param>
-            <param name="gt"></param>
+            <param name="gt">generic trackers</param>
             <param name="col"></param>
             <param name="symcol"></param>
             <param name="hasheader"></param>
@@ -7500,7 +7517,7 @@
             </summary>
             <typeparam name="T"></typeparam>
             <param name="filepath"></param>
-            <param name="gt"></param>
+            <param name="gt">generic trackers</param>
             <param name="col"></param>
             <param name="symcol"></param>
             <param name="hasheader"></param>
@@ -7514,7 +7531,7 @@
             </summary>
             <typeparam name="T"></typeparam>
             <param name="filepath"></param>
-            <param name="gt"></param>
+            <param name="gt">generic trackers</param>
             <param name="col"></param>
             <param name="symcol"></param>
             <param name="hasheader"></param>
@@ -7528,7 +7545,7 @@
             </summary>
             <typeparam name="T"></typeparam>
             <param name="filepath"></param>
-            <param name="gt"></param>
+            <param name="gt">generic trackers</param>
             <param name="col"></param>
             <param name="symcol"></param>
             <param name="hasheader"></param>
@@ -7625,7 +7642,7 @@
             <summary>
             get name=>value pairs
             </summary>
-            <param name="idx"></param>
+            <param name="idx">index</param>
             <param name="gts"></param>
             <returns></returns>
         </member>
@@ -7633,7 +7650,7 @@
             <summary>
             get name=>value pairs
             </summary>
-            <param name="idx"></param>
+            <param name="idx">index</param>
             <param name="delim"></param>
             <param name="gts"></param>
             <returns></returns>
@@ -7661,7 +7678,7 @@
             <summary>
             test a rule made up of trackers
             </summary>
-            <param name="idx"></param>
+            <param name="idx">index</param>
             <param name="rulename"></param>
             <param name="booltrackers"></param>
             <returns></returns>
@@ -7670,7 +7687,7 @@
             <summary>
             test a rule made up of trackers
             </summary>
-            <param name="idx"></param>
+            <param name="idx">index</param>
             <param name="rulename"></param>
             <param name="debug"></param>
             <param name="booltrackers"></param>
@@ -7680,7 +7697,7 @@
             <summary>
             test a rule made up of trackers
             </summary>
-            <param name="idx"></param>
+            <param name="idx">index</param>
             <param name="rulename"></param>
             <param name="debug"></param>
             <param name="debugfails"></param>
@@ -7691,7 +7708,7 @@
             <summary>
             test a rule made up of trackers... optionally display the passes or failures.
             </summary>
-            <param name="idx"></param>
+            <param name="idx">index</param>
             <param name="rulename"></param>
             <param name="debug"></param>
             <param name="debugfails"></param>
@@ -7767,6 +7784,23 @@
             <param name="primarygtname"></param>
             <param name="d"></param>
             <param name="gts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Common.GenericTracker.RemoveLabels(TradeLink.API.GenericTrackerI@,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="gt"></param>
+            <param name="removelabs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TradeLink.Common.GenericTracker.CopyGenericTracker(TradeLink.API.GenericTrackerI,TradeLink.API.GenericTrackerI@,System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="orgsource"></param>
+            <param name="dest"></param>
+            <param name="excludelabels"></param>
             <returns></returns>
         </member>
         <member name="T:TradeLink.Common.BookTracker">

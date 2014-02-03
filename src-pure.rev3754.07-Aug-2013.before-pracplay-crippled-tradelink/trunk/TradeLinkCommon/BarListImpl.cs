@@ -366,7 +366,7 @@ namespace TradeLink.Common
         /// <summary>
         /// gets or sets the default interval in seconds
         /// </summary>
-        int _defaultcustint = 0;
+        int _defaultcustint = 20;
         public int DefaultCustomInterval 
         { 
             get 
@@ -561,7 +561,7 @@ namespace TradeLink.Common
         /// </summary>
         /// <param name="symbol">The symbol.</param>
         /// <param name="filedata">The file containing the CSV records.</param>
-        /// <returns></returns>
+        /// <returns>barlistimple</returns>
         public static BarListImpl FromCSV(string symbol, string filedata, int barinterval)
         {
             BarListImpl b = new BarListImpl(BarInterval.Day, symbol);
@@ -691,9 +691,9 @@ namespace TradeLink.Common
             debs = d;
             const string AMEX = ":AMEX";
             if ((symbol == null) || (symbol == string.Empty)) return new
-BarListImpl();
+            BarListImpl();
             string url = @"http://finance.google.com/finance/historical?
-histperiod=daily&startdate=" + startdate + "&enddate=" + enddate + "&output=csv&q=" + symbol;
+                histperiod=daily&startdate=" + startdate + "&enddate=" + enddate + "&output=csv&q=" + symbol;
             BarListImpl bl = new BarListImpl(BarInterval.Day, symbol);
 
             string res = Util.geturl(url, d);
@@ -756,10 +756,10 @@ histperiod=daily&startdate=" + startdate + "&enddate=" + enddate + "&output=csv&
         /// <summary>
         /// get a barlist from tick data and optionally use bid/ask data to construct bars
         /// </summary>
-        /// <param name="filename"></param>
-        /// <param name="uselast"></param>
-        /// <param name="usebid"></param>
-        /// <returns></returns>
+        /// <param name="filename">file name</param>
+        /// <param name="uselast">use trades</param>
+        /// <param name="usebid">use bid</param>
+        /// <returns>bar list</returns>
         public static BarList FromTIK(string filename, bool uselast, bool usebid)
         {
             _uselast = uselast;
@@ -803,6 +803,26 @@ histperiod=daily&startdate=" + startdate + "&enddate=" + enddate + "&output=csv&
                     _fromepf.newPoint(t.symbol, t.bid, t.time, t.date, t.BidSize);
             }
         }
+
+        /// <summary>
+        /// Override this for backfilling ticks
+        /// </summary>
+        /// <param name="k">Tick</param>
+        public virtual void HistSource_gotTick_Jon(Tick k) { }
+       
+        /// <summary>
+        /// Backfill bar data
+        /// </summary>
+        /// <param name="filename">file name</param>
+        public void FromTIK_Jon(string filename)
+        {
+            SecurityImpl s = SecurityImpl.FromTIK(filename);
+            s.HistSource.gotTick += new TickDelegate(HistSource_gotTick_Jon);
+            while (s.HistSource.NextTick()) ;
+            s.HistSource.Close();
+        }
+
+
         /// <summary>
         /// gets index of bar that preceeds given date
         /// </summary>
@@ -1173,13 +1193,13 @@ histperiod=daily&startdate=" + startdate + "&enddate=" + enddate + "&output=csv&
         /// <summary>
         /// load previous days bar data from tick files located in tradelink tick folder
         /// </summary>
-        /// <param name="PreviousDay"></param>
-        /// <param name="syms"></param>
-        /// <param name="AttemptToLoadPreviousDayBars"></param>
-        /// <param name="_blt"></param>
-        /// <param name="NewBarEvents"></param>
-        /// <param name="deb"></param>
-        /// <returns></returns>
+        /// <param name="PreviousDay">PreviousDay</param>
+        /// <param name="syms">symbol</param>
+        /// <param name="AttemptToLoadPreviousDayBars">AttemptToLoadPreviousDayBars</param>
+        /// <param name="_blt">blt</param>
+        /// <param name="NewBarEvents">GotNewBar</param>
+        /// <param name="deb">debug delegate</param>
+        /// <returns>true if valid</returns>
         public static bool LoadPreviousBars(int PreviousDay, string[] syms, bool AttemptToLoadPreviousDayBars, ref BarListTracker _blt, SymBarIntervalDelegate NewBarEvents, DebugDelegate deb)
         {
             if (AttemptToLoadPreviousDayBars)

@@ -5,7 +5,6 @@ using TradeLink.API;
 namespace TradeLink.Common
 {
 
-
     /// <summary>
     /// A single bar of price data, which represents OHLC and volume for an interval of time.
     /// </summary>

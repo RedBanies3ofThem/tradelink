@@ -100,13 +100,16 @@ namespace TradeLink.Common
                 return;
             newPoint(k.symbol, k.trade, k.time, k.date, k.size);
         }
-        public void newPoint(string symbol, decimal p, int time, int date, int size)
-        {
 
-            appendpoint(symbol, p, time, date, size);
-           
-
-        }
+        /// <summary>
+        /// new point
+        /// </summary>
+        /// <param name="symbol">symbol</param>
+        /// <param name="p">price</param>
+        /// <param name="time">time</param>
+        /// <param name="date">date</param>
+        /// <param name="size">trade size</param>
+        public void newPoint(string symbol, decimal p, int time, int date, int size) { appendpoint(symbol, p, time, date, size); }
 
         private void appendpoint(string symbol, decimal p, int time, int date, int size)
         {

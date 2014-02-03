@@ -36,6 +36,7 @@ namespace Kadina
             this._skinsavail = new System.Windows.Forms.ToolStripDropDownButton();
             this._tabs = new System.Windows.Forms.TabControl();
             this.msgtab = new System.Windows.Forms.TabPage();
+            this.debugControl1 = new TradeLink.AppKit.DebugControl();
             this.ticktab = new System.Windows.Forms.TabPage();
             this.itab = new System.Windows.Forms.TabPage();
             this.postab = new System.Windows.Forms.TabPage();
@@ -58,7 +59,6 @@ namespace Kadina
             this.fourhour = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this._reset = new System.Windows.Forms.Button();
-            this.debugControl1 = new TradeLink.AppKit.DebugControl();
             this.statusStrip1.SuspendLayout();
             this._tabs.SuspendLayout();
             this.msgtab.SuspendLayout();
@@ -151,9 +151,23 @@ namespace Kadina
             this.msgtab.TabIndex = 0;
             this.msgtab.Text = "Messages";
             // 
+            // debugControl1
+            // 
+            this.debugControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.debugControl1.EnableSearching = true;
+            this.debugControl1.ExternalTimeStamp = 0;
+            this.debugControl1.Location = new System.Drawing.Point(3, 3);
+            this.debugControl1.Margin = new System.Windows.Forms.Padding(1);
+            this.debugControl1.Name = "debugControl1";
+            this.debugControl1.Size = new System.Drawing.Size(513, 164);
+            this.debugControl1.TabIndex = 0;
+            this.debugControl1.TimeStamps = false;
+            this.debugControl1.UseExternalTimeStamp = false;
+            // 
             // ticktab
             // 
             this.ticktab.BackColor = System.Drawing.SystemColors.Window;
+            this.ticktab.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ticktab.Location = new System.Drawing.Point(4, 22);
             this.ticktab.Name = "ticktab";
             this.ticktab.Padding = new System.Windows.Forms.Padding(3);
@@ -369,19 +383,6 @@ namespace Kadina
             this._reset.Text = "Restart";
             this._reset.UseVisualStyleBackColor = true;
             this._reset.Click += new System.EventHandler(this._reset_Click);
-            // 
-            // debugControl1
-            // 
-            this.debugControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.debugControl1.EnableSearching = true;
-            this.debugControl1.ExternalTimeStamp = 0;
-            this.debugControl1.Location = new System.Drawing.Point(3, 3);
-            this.debugControl1.Margin = new System.Windows.Forms.Padding(1);
-            this.debugControl1.Name = "debugControl1";
-            this.debugControl1.Size = new System.Drawing.Size(513, 164);
-            this.debugControl1.TabIndex = 0;
-            this.debugControl1.TimeStamps = false;
-            this.debugControl1.UseExternalTimeStamp = false;
             // 
             // kadinamain
             // 

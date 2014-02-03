@@ -324,6 +324,11 @@ namespace TradeLink.Common
                 gt.Clear();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gts">generic tracker</param>
+        /// <returns></returns>
         public static GenericTrackerI[] geninds(params GenericTrackerI[] gts)
         {
             return gts;
@@ -497,8 +502,8 @@ namespace TradeLink.Common
         /// <summary>
         /// gets all current values of every tracker for every symbol being tracked
         /// </summary>
-        /// <param name="gts"></param>
-        /// <returns></returns>
+        /// <param name="gts">generic trackers</param>
+        /// <returns>string format of values</returns>
         public static string GetIndicatorPairs(params GenericTrackerI[] gts)
         {
             if (gts.Length == 0) 
@@ -515,16 +520,16 @@ namespace TradeLink.Common
         /// <summary>
         /// get single readable line of indicators for output when response debugging
         /// </summary>
-        /// <param name="idx"></param>
-        /// <param name="gts"></param>
+        /// <param name="idx">index</param>
+        /// <param name="gts">generic trackers</param>
         /// <returns></returns>
         public static string GetIndicatorPairs(int idx, params GenericTrackerI[] gts) { return GetIndicatorPairs(idx, " ", gts); }
         /// <summary>
         /// get single readable line of indicators (with custom delimiter) for output when response debugging
         /// </summary>
-        /// <param name="idx"></param>
+        /// <param name="idx">index</param>
         /// <param name="delim"></param>
-        /// <param name="gts"></param>
+        /// <param name="gts">generic trackers</param>
         /// <returns></returns>
         public static string GetIndicatorPairs(int idx, string delim, params GenericTrackerI[] gts)
         {
@@ -536,7 +541,7 @@ namespace TradeLink.Common
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="filepath"></param>
-        /// <param name="gt"></param>
+        /// <param name="gt">generic trackers</param>
         /// <param name="col"></param>
         /// <returns></returns>
         public static bool WriteCSV<T>(string filepath, GenericTracker<T> gt, int col) { return WriteCSV<T>(filepath, gt, col, 0, true, ',', string.Empty, null); }
@@ -545,7 +550,7 @@ namespace TradeLink.Common
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="filepath"></param>
-        /// <param name="gt"></param>
+        /// <param name="gt">generic trackers</param>
         /// <param name="col"></param>
         /// <param name="symcol"></param>
         /// <returns></returns>
@@ -555,7 +560,7 @@ namespace TradeLink.Common
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="filepath"></param>
-        /// <param name="gt"></param>
+        /// <param name="gt">generic trackers</param>
         /// <param name="col"></param>
         /// <param name="symcol"></param>
         /// <param name="hasheader"></param>
@@ -567,7 +572,7 @@ namespace TradeLink.Common
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="filepath"></param>
-        /// <param name="gt"></param>
+        /// <param name="gt">generic trackers</param>
         /// <param name="col"></param>
         /// <param name="symcol"></param>
         /// <param name="hasheader"></param>
@@ -580,7 +585,7 @@ namespace TradeLink.Common
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="filepath"></param>
-        /// <param name="gt"></param>
+        /// <param name="gt">generic trackers</param>
         /// <param name="col"></param>
         /// <param name="symcol"></param>
         /// <param name="hasheader"></param>
@@ -593,7 +598,7 @@ namespace TradeLink.Common
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="filepath"></param>
-        /// <param name="gt"></param>
+        /// <param name="gt">generic trackers</param>
         /// <param name="col"></param>
         /// <param name="symcol"></param>
         /// <param name="hasheader"></param>
@@ -826,14 +831,14 @@ namespace TradeLink.Common
         /// <summary>
         /// get name=>value pairs
         /// </summary>
-        /// <param name="idx"></param>
+        /// <param name="idx">index</param>
         /// <param name="gts"></param>
         /// <returns></returns>
         public static string[] GetIndicatorPrettyPairs(int idx, params GenericTrackerI[] gts) { return GetIndicatorPrettyPairs(idx, "=>", gts); }
         /// <summary>
         /// get name=>value pairs
         /// </summary>
-        /// <param name="idx"></param>
+        /// <param name="idx">index</param>
         /// <param name="delim"></param>
         /// <param name="gts"></param>
         /// <returns></returns>
@@ -917,7 +922,7 @@ namespace TradeLink.Common
         /// <summary>
         /// test a rule made up of trackers
         /// </summary>
-        /// <param name="idx"></param>
+        /// <param name="idx">index</param>
         /// <param name="rulename"></param>
         /// <param name="booltrackers"></param>
         /// <returns></returns>
@@ -925,7 +930,7 @@ namespace TradeLink.Common
         /// <summary>
         /// test a rule made up of trackers
         /// </summary>
-        /// <param name="idx"></param>
+        /// <param name="idx">index</param>
         /// <param name="rulename"></param>
         /// <param name="debug"></param>
         /// <param name="booltrackers"></param>
@@ -934,7 +939,7 @@ namespace TradeLink.Common
         /// <summary>
         /// test a rule made up of trackers
         /// </summary>
-        /// <param name="idx"></param>
+        /// <param name="idx">index</param>
         /// <param name="rulename"></param>
         /// <param name="debug"></param>
         /// <param name="debugfails"></param>
@@ -944,7 +949,7 @@ namespace TradeLink.Common
         /// <summary>
         /// test a rule made up of trackers... optionally display the passes or failures.
         /// </summary>
-        /// <param name="idx"></param>
+        /// <param name="idx">index</param>
         /// <param name="rulename"></param>
         /// <param name="debug"></param>
         /// <param name="debugfails"></param>
@@ -1180,7 +1185,12 @@ namespace TradeLink.Common
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="gt"></param>
+        /// <param name="removelabs"></param>
+        /// <returns></returns>
         public static bool RemoveLabels(ref GenericTrackerI gt, string[] removelabs)
         {
             // make a new empty
@@ -1216,6 +1226,13 @@ namespace TradeLink.Common
             return ok;
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="orgsource"></param>
+        /// <param name="dest"></param>
+        /// <param name="excludelabels"></param>
+        /// <returns></returns>
         public static bool CopyGenericTracker(GenericTrackerI orgsource, ref GenericTrackerI dest, List<string> excludelabels)
         {
             var gt = orgsource;
